@@ -1855,13 +1855,16 @@ background-image: url(../imgs/moso\ 6.jpg);
   background-size: cover;
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
+  min-height: calc(100vh - 62px);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .registration-section .container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -1880,6 +1883,14 @@ background-image: url(../imgs/moso\ 6.jpg);
   background-color: transparent;
 }
 
+.registration-section .image img {
+  width:100%;
+  max-width: 100%;
+  position: relative;
+  animation: up-and-down 5s linear infinite;
+  -webkit-animation: up-and-down 5s linear infinite;
+}
+
 @media (max-width: 991px) {
   .registration-section .image {
     display: none;
@@ -1893,13 +1904,13 @@ background-image: url(../imgs/moso\ 6.jpg);
   align-items: center;
   justify-content: center;
   flex-basis: 50%;
-  height: 650px;
   box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  padding: 80px 0;
 }
 
 @media (max-width: 991px) {
   .registration-section .form {
-    flex-basis: 100%;
+    flex-basis: 90%;
   }
 }
 
@@ -1934,8 +1945,7 @@ background-image: url(../imgs/moso\ 6.jpg);
 .registration-section .form [type="submit"]:hover {
   background-color: var(--main-color-alt);
 }
-
-.registration-section .form a {
+.registration-section .content a {
   font-size: 14px;
   font-weight: 600;
   color: var(--main-color-alt);
@@ -1946,7 +1956,7 @@ background-image: url(../imgs/moso\ 6.jpg);
 
 }
 
-.registration-section .form .join-now {
+.registration-section .content .join-now {
   font-size: 16px;
   color: var(--main-color-alt);
   text-align: center;
@@ -1957,6 +1967,7 @@ background-image: url(../imgs/moso\ 6.jpg);
 .registration-section .content {
   text-align: center;
   padding: 0 20px;
+  
 }
 
 .registration-section .content h2 {
@@ -1970,14 +1981,6 @@ background-image: url(../imgs/moso\ 6.jpg);
   font-size: 18px;
   max-width: 500px;
   color: black;
-}
-
-.registration-section .content img {
-  width:100%;
-  max-width: 100%;
-  position: relative;
-  animation: up-and-down 5s linear infinite;
-  -webkit-animation: up-and-down 5s linear infinite;
 }
 
 /* end registration */
