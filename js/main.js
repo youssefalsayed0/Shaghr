@@ -63,3 +63,50 @@ function show() {
     menu.classList.add("open");
   }
 }
+
+/* owl slider */
+function logo_carouselInit() {
+  $('.logo_active').owlCarousel({
+      dots:true,
+      loop: true,
+      margin: 20,
+      smartSpeed: 1000,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      responsive: {
+          0: {
+              items: 4
+          },
+          576: {
+              items: 5,
+          },
+          768: {
+              items: 6,
+          },
+          992: {
+              items: 8
+          }
+      }
+  })
+
+  var owl = $('.main_active');
+owl.owlCarousel({
+  dots:true,
+    items:1,
+    loop:true,
+    autoplay:true,
+    smartSpeed: 1000,
+    autoplayTimeout:2500,
+    autoplayHoverPause:true,
+});
+$('.play').on('click',function(){
+    owl.trigger('play.owl.autoplay',[1000])
+})
+$('.stop').on('click',function(){
+    owl.trigger('stop.owl.autoplay')
+})
+
+}
+logo_carouselInit();
+
