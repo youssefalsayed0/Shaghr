@@ -63,7 +63,7 @@ ul {
   height: 14px;
   border-radius: 50%;
   border: 2px solid #333;
-  bottom: -38px;
+  bottom: -36px;
   background-color: #f48024;
 }
 .main-btn {
@@ -543,21 +543,23 @@ ul {
 /* End Landing */
 
 /* start slider */
-.hero-carousel {
-  padding-top: var(--main-padding-top);
-  padding-bottom: var(--main-padding-bottom);
-}
-
 .c-item {
   height: 500px;
 }
-
+.carousel-caption{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .c-img {
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
   -webkit-filter: brightness(0.6);
 }
+
 
 .slider-section {
   padding-top: var(--main-padding-top);
@@ -605,17 +607,17 @@ ul {
   justify-content: center;
 }
 
-.logo_active img {
+.logo_items img {
   width: 80px !important;
 }
 
-.logo_active .owl-item {
+.logo_items .owl-item {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.owl-carousel .owl-stage {
+.logo_items .owl-stage {
   display: flex;
   align-items: center;
 }
@@ -957,7 +959,7 @@ ul {
 .pricing .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 30px;
+  gap: 35px;
 }
 
 .pricing .box {

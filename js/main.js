@@ -66,8 +66,7 @@ function show() {
 
 /* owl slider */
 function logo_carouselInit() {
-  $('.logo_active').owlCarousel({
-      dots:true,
+  $('.logo_items').owlCarousel({
       loop: true,
       margin: 20,
       smartSpeed: 1000,
@@ -85,7 +84,7 @@ function logo_carouselInit() {
               items: 6,
           },
           992: {
-              items: 8
+              items: 8,
           }
       }
   })
@@ -96,9 +95,10 @@ owl.owlCarousel({
     items:1,
     loop:true,
     autoplay:true,
-    smartSpeed: 1000,
-    autoplayTimeout:2500,
+    smartSpeed: 1100,
+    autoplayTimeout:3000,
     autoplayHoverPause:true,
+
 });
 $('.play').on('click',function(){
     owl.trigger('play.owl.autoplay',[1000])
