@@ -8,6 +8,15 @@ let statsSection = document.querySelector(".stats");
 let started = false; // Function Started ? No
 
 window.onscroll = function () {
+  if (
+    document.body.scrollTop > 200||
+    document.documentElement.scrollTop > 200
+  ) {
+    arrow.style.display = "block";
+  } else {
+    arrow.style.display = "none";
+  }
+  
   // Stats Increase Number
   if (window.scrollY >= statsSection.offsetTop) {
     if (!started) {
@@ -16,25 +25,6 @@ window.onscroll = function () {
     started = true;
   }
 
-  if (
-    document.body.scrollTop > 300 ||
-    document.documentElement.scrollTop > 300
-  ) {
-    navig.style.position = "sticky";
-    navig.style.backgroundColor = "#822fff";
-  } else {
-    navig.style.position = "relative";
-    navig.style.backgroundColor = "transparent";
-  }
-
-  if (
-    document.body.scrollTop > 700 ||
-    document.documentElement.scrollTop > 700
-  ) {
-    arrow.style.display = "block";
-  } else {
-    arrow.style.display = "none";
-  }
 };
 
 function startCount(el) {

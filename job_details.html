@@ -23,28 +23,80 @@
 
 <body>
   <!-- Start Header -->
-  <div class="header" id="header">
+  <nav class="navbar sticky-top">
     <div class="container">
-      <ul class="main-nav">
-        <a href="./index.html" class="logo"><span>S</span>haghr</a>
-        <li><a href="./job_list.html">View Jobs</a></li>
-        <li><a href="./employer-signup.html"><i class="fa-solid fa-briefcase icon"></i>Post a Job</a></li>
+      <a class="navbar-brand " href="./index.html"><span>S</span>HAGHR</a>
+      <ul class="side-links me-auto  ">
+        <li class="nav-item dropdown mx-4 ">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Browse Jobs
+          </a>
+          <ul class="dropdown-menu  ">
+            <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+            <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ">
+          <a class="text-white" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+        </li>
       </ul>
-      <ul class="left-nav">
-        <li><a href="./login.html" class="login">Login</a></li>
-        <li><a href="./signup.html" class="join">Join Now</a></li>
-        <i class="fas fa-bars toggle-menu" onclick="show()"></i>
-        <ul id="toggle">
-          <li><a href="./job_list.html">View Jobs</a></li>
-          <li><a href="./employer-signup.html">Post a Job</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./employer-signup.html">Employer?</a></li>
-        </ul>
-      </ul>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title " id="offcanvasNavbarLabel "><span>S</span>HAGHR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav  flex-grow-1 position-relative h-100 ">
+            <li class="nav-item">
+              <a class="nav-link" href="./employer-signup.html">Employer ?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Browse Jobs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <div class="d-flex flex-column w-100  position-absolute bottom-0 start-0 ">
+              <a href="./login.html" class="offcanvas-login mt-3 w-100">Login</a>
+              <a href="./signup.html" class="offcanvas-signup mt-3 w-100">Get Started</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <a href="./login.html" class="login-button">Login</a>
+      <a href="./signup.html" class="signup-button  expand-lg">Join Now </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars toggler-icon "></i>
+      </button>
     </div>
-  </div>
+  </nav>
   <!-- End Header -->
   <!-- start job details -->
   <div class="job-details-section">
@@ -59,7 +111,7 @@
           </div>
           <hr>
           <button>Apply Now</button>
-          <img src="./imgs/avatar-03.png" alt="">
+          <img src="./imgs/logo02.png" alt="">
         </div>
         <div class="job-details">
           <div class="single_wrap">
@@ -106,7 +158,7 @@
           </div>
           <div class="job_content">
             <ul>
-              <li>Published on: <span>12 Nov, 2019</span></li>
+              <li>Published on: <span>12 Nov, 2023</span></li>
               <li>Vacancy: <span>2 Position</span></li>
               <li>Salary: <span>50k - 120k/y</span></li>
               <li>Location: <span>Cairo, Egypt</span></li>
@@ -134,7 +186,7 @@
         </div>
         <div class="related-jobs">
           <h2>Discover More Jobs</h2>
-          <p>Join WUZZUF now and learn about all the companies currently hiring in Egypt.</p>
+          <p>Join SHAGHR now and learn about all the companies currently hiring in Egypt.</p>
           <a class="reg-nav-btn" href="./signup.html">Join and find your job</a>
         </div>
         <div class="related-jobs">

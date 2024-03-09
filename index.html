@@ -22,33 +22,88 @@
 </head>
 
 <body>
+
+  <!-- start floating-arrow  -->
   <div id="floating-arrow" onclick="goUp()">
     <i class="fas fa-angle-double-up fa-2x"></i>
   </div>
+  <!-- end floating-arrow -->
+
   <!-- Start Header -->
-  <div class="header main-header" id="main-header">
+  <nav class="navbar sticky-top">
     <div class="container">
-      <ul class="main-nav">
-        <a href="./index.html" class="logo"><span>S</span>HAGHR</a>
-        <li><a href="./job_list.html">View Jobs</a></li>
-        <li><a href="./employer-signup.html"><i class="fa-solid fa-briefcase icon"></i>Post a Job</a></li>
+      <a class="navbar-brand " href="./index.html"><span>S</span>HAGHR</a>
+      <ul class="side-links me-auto  ">
+        <li class="nav-item dropdown mx-4 ">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Browse Jobs
+          </a>
+          <ul class="dropdown-menu  ">
+            <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+            <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ">
+          <a class="text-white" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+        </li>
       </ul>
-      <ul class="left-nav">
-        <li><a href="./login.html" class="login">Login</a></li>
-        <li><a href="./signup.html" class="join">Join Now</a></li>
-        <i class="fas fa-bars toggle-menu" onclick="show()"></i>
-        <ul id="toggle">
-          <li><a href="./job_list.html">View Jobs</a></li>
-          <li><a href="./employer-signup.html">Post a Job</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="./signup.html">Sign Up</a></li>
-          <li><a href="./employer-signup.html">Employer?</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./about.html">About</a></li>
-        </ul>
-      </ul>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title " id="offcanvasNavbarLabel "><span>S</span>HAGHR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav  flex-grow-1 position-relative h-100 ">
+            <li class="nav-item">
+              <a class="nav-link" href="./employer-signup.html">Employer ?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Browse Jobs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <div class="d-flex flex-column w-100  position-absolute bottom-0 start-0 ">
+              <a href="./login.html" class="offcanvas-login mt-3 w-100">Login</a>
+              <a href="./signup.html" class="offcanvas-signup mt-3 w-100">Get Started</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <a href="./login.html" class="login-button">Login</a>
+      <a href="./signup.html" class="signup-button  expand-lg">Join Now </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars toggler-icon "></i>
+      </button>
     </div>
-  </div>
+  </nav>
   <!-- End Header -->
 
   <!-- Start Landing -->
@@ -56,7 +111,7 @@
     <div class="container">
       <div class="text">
         <h1>Your Career, Our Commitment</h1>
-        <p>Searching for vacancies & career opportunities? SHAGHR helps you in your job search in
+        <p>Searching for vacancies & career opportunities?<span> SHAGHR</span> helps you in your job search in
           Egypt</p>
         <form class="search-bar">
           <i class="fa-solid fa-magnifying-glass"></i>
@@ -66,7 +121,7 @@
         <a type="button" class="employer">Employer?</a>
       </div>
       <div class="image">
-        <img src="./imgs/landing-image.png" alt="" />
+        <img src="./imgs/undraw_job_offers_re_634p.svg" alt="" />
       </div>
     </div>
     <a href="#slider" class="go-down">
@@ -170,95 +225,60 @@
   </div>
   <!-- end logo slider -->
 
-  <!-- Start new jobs -->
-  <div class="articles" id="articles">
+  <!-- start new jobs -->
+  <div class="new-jobs">
     <div class="main-heading" data-aos="zoom-in">
-      <h2>new jobs</h2>
+      <h2>Latest Jobs</h2>
     </div>
     <div class="container">
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
+      <div class="job-slider">
+        <ul class="job-list">
+          <li>
+            <a href="">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+          <li>
+            <a href="" previewlistener="true">Digital Marketing Consultant</a>
+            <span class="location">Ansira - Cairo</span>
+            <span class="time">3 minutes ago</span>
+          </li>
+        </ul>
       </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
-      <div class="box">
-        <div class="content">
-          <h4>Full Stack application Developer</h4>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
-        </div>
-        <div class="info">
-          <a href="" data-aos="fade-right">View Details</a>
-          <i class="fas fa-long-arrow-alt-right" data-aos="fade-right"></i>
-        </div>
-      </div>
+      <a class="new-jobs-nav" href="" previewlistener="true">See other jobs on SHAGHR &#x2192; </a>
     </div>
   </div>
-  <!-- End new jobs -->
+  <!-- end new jobs -->
 
   <!--  start big slider -->
   <div id="hero-carousel" class="carousel slide hero-carousel" data-bs-ride="true">
@@ -359,7 +379,7 @@
     </div>
     <div class="container">
 
-      <img src="imgs/work-steps.png" alt="" class="image" data-aos="fade-right" />
+      <img src="imgs/undraw_fill_form_re_cwyf.svg" alt="" class="image" data-aos="fade-right" />
 
       <div class="info">
         <div class="box">
