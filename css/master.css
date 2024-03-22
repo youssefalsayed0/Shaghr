@@ -32,7 +32,9 @@ ul {
   margin: 0;
   padding: 0;
 }
+/* end global rules */
 
+/* start components */
 .main-heading {
   text-align: center;
 }
@@ -160,7 +162,9 @@ ul {
   left: 0;
 }
 
-/* End Global Rules */
+
+/* End components*/
+
 /* start floating btn */
 #floating-arrow {
   position: fixed;
@@ -183,6 +187,7 @@ ul {
     transform: translateY(-10px);
   }
 }
+
 /* end flaoting btn */
 
 /* Start navbar */
@@ -196,9 +201,10 @@ ul {
   font-weight: 700;
   color: white;
 }
-.offcanvas-title{
-color: var(--main-color);
-font-weight: 700;
+
+.offcanvas-title {
+  color: var(--main-color);
+  font-weight: 700;
 }
 
 .navbar-brand span {
@@ -288,7 +294,6 @@ font-weight: 700;
 
 .offcanvas-login {
   text-align: center;
-
   color: var(--main-color);
   margin-right: 10px;
   border: 1px solid var(--main-color);
@@ -330,6 +335,7 @@ font-weight: 700;
   -ms-transition: var(--main-transition);
   -o-transition: var(--main-transition);
 }
+
 /* End Header */
 
 /* Start Landing */
@@ -427,10 +433,10 @@ font-weight: 700;
 
 .landing .image img {
   position: relative;
+  animation: up-and-down 5s linear infinite;
   padding: 0;
   width: 560px;
   height: fit-content;
-  animation: up-and-down 5s linear infinite;
   -webkit-animation: up-and-down 5s linear infinite;
 }
 
@@ -465,6 +471,7 @@ font-weight: 700;
   animation: bouncing 1.5s infinite;
   -webkit-animation: bouncing 1.5s infinite;
 }
+
 /* End Landing */
 
 /* start slider */
@@ -520,6 +527,7 @@ font-weight: 700;
 .slider a:hover {
   background-color: #5a0eb1;
 }
+
 /* end slider */
 
 /* start logo slider */
@@ -546,6 +554,7 @@ font-weight: 700;
   display: flex;
   align-items: center;
 }
+
 /* end logo slider*/
 
 
@@ -556,9 +565,7 @@ font-weight: 700;
 }
 
 .new-jobs .container {
-  max-width: 1170px;
-  margin: 0 auto;
-  padding: 0 16px
+  padding: 0 16px;
 }
 
 @media screen and (max-width: 1168px) {
@@ -572,42 +579,27 @@ font-weight: 700;
   border: none;
   padding: 0;
   margin-top: 32px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
+  grid-gap: 1rem 1rem;
+  display: grid;
+  gap: 1rem 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-@media screen and (max-width: 1168px) {
+
+@media screen and (max-width: 1199px) {
   .job-slider .job-list {
-    width: 1168px;
+    width: 1800px;
     padding-right: 16px;
   }
 }
 
 .new-jobs .job-slider .job-list li {
-  margin: 6px 0;
   background: #ffffff;
   border-radius: 4px;
   border: 1px solid #D9DDE4;
-  height: 113px;
-  width: 276px;
   display: flex;
-  -webkit-box-flex-flow: column;
-  -webkit-flex-flow: column;
-  -ms-flex-flow: column;
-  flex-flow: column;
-  -webkit-align-items: flex-start;
-  -webkit-box-align: flex-start;
-  -ms-flex-align: flex-start;
   align-items: flex-start;
+  flex-direction: column;
   padding: 16px;
 }
 
@@ -637,7 +629,6 @@ font-weight: 700;
   line-height: 22px;
   margin-bottom: 8px;
   width: 100%;
-  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
@@ -658,9 +649,6 @@ font-weight: 700;
   color: var(--main-color);
   -webkit-text-decoration: none;
   text-decoration: none;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -webkit-box-align: center;
@@ -675,6 +663,7 @@ font-weight: 700;
     justify-content: flex-end;
   }
 }
+
 /* end new jobs */
 
 /* Start Features */
@@ -778,6 +767,7 @@ font-weight: 700;
   background-position: left bottom;
   color: white;
 }
+
 /* End Features */
 
 /* Start Video */
@@ -927,6 +917,7 @@ font-weight: 700;
   margin: 10px 0 0;
   font-size: 16px;
 }
+
 /* End Work Steps */
 
 /* Start Pricing */
@@ -1068,6 +1059,7 @@ font-weight: 700;
   border-color: var(--main-color-alt);
   color: white;
 }
+
 /* End Pricing */
 
 /* Start Stats */
@@ -1157,6 +1149,7 @@ font-weight: 700;
   font-size: 20px;
   font-weight: bold;
 }
+
 /* End Stats */
 
 /* Start contact */
@@ -1268,6 +1261,7 @@ font-weight: 700;
   animation: up-and-down 5s linear infinite;
   -webkit-animation: up-and-down 5s linear infinite;
 }
+
 /* End contact */
 
 /* Start Footer */
@@ -1402,11 +1396,6 @@ font-weight: 700;
   display: block;
 }
 
-.footer .footer-gallery img {
-  width: 78px;
-  border: 3px solid white;
-  margin: 2px;
-}
 
 .footer .copyright {
   padding: 25px 0;
@@ -1419,6 +1408,7 @@ font-weight: 700;
 
 /* Start Animation */
 @keyframes up-and-down {
+
   0%,
   100% {
     top: 0;
@@ -1430,6 +1420,7 @@ font-weight: 700;
 }
 
 @keyframes bouncing {
+
   0%,
   10%,
   20%,
@@ -1482,6 +1473,7 @@ font-weight: 700;
 }
 
 @keyframes flashing {
+
   0%,
   40% {
     opacity: 1;
@@ -1495,6 +1487,7 @@ font-weight: 700;
 }
 
 @keyframes change-background {
+
   0%,
   100% {
     background-image: url("../imgs/discount-background1.jpg");
@@ -1504,6 +1497,7 @@ font-weight: 700;
     background-image: url("../imgs/discount-background2.jpg");
   }
 }
+
 /* End Animation */
 
 /* start slang */
@@ -1543,6 +1537,7 @@ font-weight: 700;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
+
 /* end slang */
 
 /* start jobs */
@@ -1550,6 +1545,7 @@ font-weight: 700;
   background-color: var(--section-background);
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
+  height: 100vh;
 }
 
 .jobs .container {
@@ -1673,6 +1669,7 @@ font-weight: 700;
   object-fit: contain;
   object-position: center center;
 }
+
 /* end jobs */
 
 /* start registration */
@@ -1680,7 +1677,7 @@ font-weight: 700;
   background-size: cover;
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
-  min-height:100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1699,7 +1696,7 @@ font-weight: 700;
 }
 
 .registration-section .image {
-  height: 650px;
+  height: 700px;
   background-image: url("../imgs/liquid-cheese.svg");
   background-size: cover;
   flex-basis: 35%;
@@ -1739,13 +1736,13 @@ font-weight: 700;
 }
 
 .registration-section .form {
-  height: 650px;
+  height: 700px;
   display: flex;
   background-color: white;
   border: 1px solid #d9dde4;
   align-items: center;
   justify-content: center;
-  flex-basis:60%;
+  flex-basis: 60%;
   box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
 }
 
@@ -1771,10 +1768,13 @@ font-weight: 700;
   color: black;
 }
 
+.registration-section .form .form-group  {
+ margin-bottom: 20px;
+ text-align: start;
+}
 .registration-section .form .input {
   display: block;
   width: 100%;
-  margin-bottom: 25px;
   padding: 15px;
   border: none;
   border-bottom: 1px solid #ccc;
@@ -1839,6 +1839,22 @@ font-weight: 700;
   display: inline-block;
   cursor: pointer;
 }
+
+.password-container {
+  position: relative;
+}
+.password-container .password-toggle{
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translatey(-50%);
+  -webkit-transform: translatey(-50%);
+  -moz-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  -o-transform: translatey(-50%);
+  cursor: pointer;
+}
+
 /* end registration */
 
 
@@ -1879,12 +1895,13 @@ font-weight: 700;
 .about-us .about a {
   color: var(--main-color-alt);
 }
+
 /* end about */
 
 
 /* start job details */
 .job-details-section {
-padding: 20px 0 ;
+  padding: 20px 0;
   background-color: var(--section-background);
 }
 
@@ -2148,3 +2165,141 @@ padding: 20px 0 ;
 }
 
 /* end job details  */
+
+/* start jop posting  */
+.job-form {
+  padding: 60px 20px;
+}
+
+.job-form h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 35px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.job-form .container {
+  background-color: #fff;
+  max-width: 991px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.job-form .form-control-non-resizable {
+  resize: none;
+}
+
+.job-form .form-control {
+  border-radius: 5px;
+}
+
+.job-form .form-group {
+  margin-bottom: 30px;
+}
+
+.job-form .form-group button {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  margin-left: 15px;
+}
+
+.job-form .form-group button:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+
+.job-form [type="submit"] {
+  color: white;
+  background-color: var(--main-color);
+  margin: 0;
+}
+
+.job-form [type="submit"]:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  background-color: white;
+}
+
+.job-form .form-group label {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+/* end jop posting */
+
+
+/*  */
+.form-body{
+  height: 100vh;
+  background-image: url(../imgs/body-image.png);
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+.em-form{
+  padding: 60px 10px ;
+}
+.em-form .form-container {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.em-form .form-container h2 {
+  color: var(--main-color);
+  text-align: center;
+  font-weight: 700;
+  margin: 20px 0 60px 0;
+}
+
+.em-form .form-container .btn-primary {
+  background-color: var(--main-color);
+  border: none;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.em-form .form-container .btn-primary:hover {
+  background-color:rebeccapurple;
+}
+
+.em-form .form-container .input-group-prepend select {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.em-form .form-container .input-group-text {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.em-form .login-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.em-form .login-link a {
+  color: var(--main-color);
+}
+.em-form .input-group-prepend select{
+  border-color: #cccccc;
+  font-size: 12px;
+  height: 99%;
+  width: 65px;
+  margin-right: 10px;
+  text-align: center;
+}
+/*  */

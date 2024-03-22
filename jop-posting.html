@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHAGHR</title>
+    <link rel="icon" type="png" href="./imgs/Brown Simple Astral Project Simple Creative Logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <!-- Start Header -->
+    <nav class="navbar bg">
+        <div class="container">
+            <a class="navbar-brand " href="./index.html"><span>S</span>HAGHR</a>
+     
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h1 class="offcanvas-title " id="offcanvasNavbarLabel "><span>S</span>HAGHR</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body ">
+                    <ul class="navbar-nav  flex-grow-1 position-relative h-100 ">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./employer-signup.html">Employer ?</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Browse Jobs
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./jop-posting.html"><i
+                                    class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Us</a>
+                        </li>
+                        <div class="d-flex flex-column w-100  position-absolute bottom-0 start-0 ">
+                            <a href="./login.html" class="offcanvas-login mt-3 w-100">Login</a>
+                            <a href="./signup.html" class="offcanvas-signup mt-3 w-100">Get Started</a>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars toggler-icon "></i>
+            </button>
+        </div>
+    </nav>
+    <!-- End Header -->
+    <div class="job-form">
+        <div class="container">
+            <h1 class="mb-5">Post a Job</h1>
+            <form id="newform" action="#" class="needs-validation" novalidate>
+
+                <div class="form-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" class="form-control" id="jobTitle" name="jobTitle" placeholder="Enter job title"
+                        required>
+                    <div class="invalid-feedback">Please enter a job title.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" class="form-control" id="companyName" name="companyName"
+                        placeholder="Enter company name" required>
+                    <div class="invalid-feedback">Please enter a company name.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobDescription">Job Description</label>
+                    <textarea class="form-control form-control-non-resizable" id="jobDescription" name="jobDescription"
+                        rows="5" placeholder="Enter job description" required></textarea>
+                    <div class="invalid-feedback">Please enter a job description.</div>
+                </div>
+
+                <div class="form-row ">
+                    <div class="form-group ">
+                        <label for="location">Location</label>
+                        <input type="text" class="form-control" id="location" name="location"
+                            placeholder="Enter job location" required>
+                        <div class="invalid-feedback">Please enter a location.</div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="salary">Salary</label>
+                        <input type="text" class="form-control" id="salary" name="salary" placeholder="Enter salary"
+                            required>
+                        <div class="invalid-feedback">Please enter a salary.</div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="vacancy">Vacancy</label>
+                    <input type="number" class="form-control" id="vacancy" name="vacancy"
+                        placeholder="Enter number of vacancies" required>
+                    <div class="invalid-feedback">Please enter the number of vacancies.</div>
+                </div>
+
+                <div class="form-group ">
+                    <label for="benefits">Benefits</label>
+                    <textarea class="form-control form-control-non-resizable" id="benefits" name="benefits" rows="3"
+                        placeholder="Enter benefits offered"></textarea>
+                </div>
+
+                <div class="form-group" id="responsibilitiesGroup">
+                    <label>Responsibilities</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="responsibilities[]"
+                            placeholder="Enter responsibility" required>
+                        <div class="input-group-append">
+                            <button class="btn  add-responsibility-btn" type="button">Add</button>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">Please enter responsibilities.</div>
+                </div>
+
+                <div class="form-group" id="qualificationsGroup">
+                    <label>Qualifications</label>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control" name="qualifications[]"
+                            placeholder="Enter qualification" required>
+                        <div class="input-group-append">
+                            <button class="btn  add-qualification-btn " type="button">Add</button>
+                        </div>
+                    </div>
+                    <div class="invalid-feedback">Please enter qualifications.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="jobType">Job Type</label>
+                    <select class="form-control" id="jobType" name="jobType" required>
+                        <option value="">Select job type</option>
+                        <option value="fulltime">Full-time</option>
+                        <option value="parttime">Part-time</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a job type.</div>
+                </div>
+
+                <button type="submit" class="btn">Submit</button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/all.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

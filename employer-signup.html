@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -20,3 +21,167 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
 </head>
+
+<body class="form-body">
+
+  <!-- Start Header -->
+  <nav class="navbar bg-transparent ">
+    <div class="container">
+      <a class="navbar-brand " href="./index.html"><span>S</span>HAGHR</a>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title " id="offcanvasNavbarLabel "><span>S</span>HAGHR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav  flex-grow-1 position-relative h-100 ">
+            <li class="nav-item">
+              <a class="nav-link" href="./employer-signup.html">Employer ?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Browse Jobs
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./jop-posting.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <div class="d-flex flex-column w-100  position-absolute bottom-0 start-0 ">
+              <a href="./login.html" class="offcanvas-login mt-3 w-100">Login</a>
+              <a href="./signup.html" class="offcanvas-signup mt-3 w-100">Get Started</a>
+            </div>
+          </ul>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars toggler-icon "></i>
+      </button>
+    </div>
+  </nav>
+  </div>
+  <!-- End Header -->
+
+  <!-- start signup -->
+  <div class="em-form">
+    <div class="form-container">
+      <h2>Create a company account</h2>
+      <form class="needs-validation" id="companyForm" novalidate>
+        <div class="form-group mb-4">
+          <label class="mb-2 ms-1"  for="companyName">Company Name</label>
+          <input type="text" class="form-control" id="companyName" placeholder="Enter Company Name" required>
+          <div class="invalid-feedback">
+            Please enter the company name.
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group mb-4 ">
+            <label class="mb-2 ms-1" for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            <div class="invalid-feedback">
+              Please enter your first name.
+            </div>
+          </div>
+          <div class="form-group mb-4">
+            <label class="mb-2 ms-1" for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+            <div class="invalid-feedback">
+              Please enter your last name.
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <label class="mb-2 ms-1" for="mobileNumber">Mobile Number</label>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <select class="custom-select" id="countryCode" required>
+                <option value="">+20</option>
+                <option value="+1"> +1</option>
+                <option value="+93">+93</option>
+                <option value="+355">+355</option>
+                <option value="+213">+213</option>
+                <!-- Add more country codes here -->
+              </select>
+            </div>
+            <input type="tel" class="form-control" id="mobileNumber" pattern="[0-9]{10,15}"
+              placeholder="Enter Mobile Number" required>
+            <div class="invalid-feedback">
+              Please enter your mobile number.
+            </div>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <label class="mb-2 ms-1" for="businessEmail">Business Email</label>
+          <input type="email" class="form-control" id="businessEmail" placeholder="Enter Business Email" required>
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <label class="mb-2 ms-1" for="password">Create Your Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Create Password" required>
+          <div class="invalid-feedback">
+            Please create a password.
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          <label class="mb-2 ms-1" for="role">Which Role Are You Hiring For</label>
+          <input type="text" class="form-control" id="role" placeholder="Enter Role" required>
+          <div class="invalid-feedback">
+            Please specify the role you are hiring for.
+          </div>
+        </div>
+        <div class="form-group form-check mb-4">
+          <input type="checkbox" class="form-check-input" id="confirmCheckbox" required>
+          <label class="form-check-label" for="confirmCheckbox">I confirm that the information provided is
+            accurate</label>
+          <div class="invalid-feedback">
+            You must confirm the accuracy of the information.
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+        <div class="login-link">
+          Already on SHAGHR? <a href="login.html">Log in</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- end signup -->
+
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/all.min.js"></script> -->
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+  <script>$(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });</script>
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
@@ -19,6 +20,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
     rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -42,7 +45,7 @@
           </ul>
         </li>
         <li class="nav-item ">
-          <a class="text-white" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+          <a class="text-white" href="./jop-posting.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
         </li>
       </ul>
 
@@ -71,7 +74,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+              <a class="nav-link" href="./jop-posting.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="./pricing.html">Pricing</a>
@@ -112,9 +115,19 @@
       <div class="form">
         <div class="content">
           <h2>Login to your account</h2>
-          <form action="">
-            <input class="input" type="email" placeholder="Your Email" name="email" />
-            <input class="input" type="password" placeholder="Your Password" name="password" />
+          <form id="newform" action="#" class="needs-validation" novalidate>
+            <div class="form-group">
+              <input class="input form-control" type="email" placeholder="Your Email" name="email" required />
+              <div class="invalid-feedback">Please check your email</div>
+            </div>
+            <div class="password-container form-group">
+              <input class="input form-control" type="password" placeholder="Your Password" name="password"
+                id="password" required />
+              <div class="password-toggle" onclick="togglePassword()">
+                <i id="eye-icon" class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="invalid-feedback">Please check your password</div>
+            </div>
             <input type="submit" value="Login" />
             <div class="social-container">
               <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>

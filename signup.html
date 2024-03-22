@@ -1,38 +1,68 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHAGHR</title>
-    <link rel="icon" type="png" href="./imgs/Brown Simple Astral Project Simple Creative Logo.png">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/master.css" />
-    <link rel="stylesheet" href="css/aos.css" />
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="css/all.min.css" />
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHAGHR</title>
+  <link rel="icon" type="png" href="./imgs/Brown Simple Astral Project Simple Creative Logo.png">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-    <!-- Start Header -->
-    <nav class="navbar sticky-top">
-        <div class="container">
-          <a class="navbar-brand " href="./index.html"><span>S</span>HAGHR</a>
-          <ul class="side-links me-auto  ">
-            <li class="nav-item dropdown mx-4 ">
-              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+  <!-- Start Header -->
+  <nav class="navbar sticky-top">
+    <div class="container">
+      <a class="navbar-brand " href="./index.html"><span>S</span>HAGHR</a>
+      <ul class="side-links me-auto  ">
+        <li class="nav-item dropdown mx-4 ">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Browse Jobs
+          </a>
+          <ul class="dropdown-menu  ">
+            <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+            <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
+          </ul>
+        </li>
+        <li class="nav-item ">
+          <a class="text-white" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+        </li>
+      </ul>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h1 class="offcanvas-title " id="offcanvasNavbarLabel "><span>S</span>HAGHR</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body ">
+          <ul class="navbar-nav  flex-grow-1 position-relative h-100 ">
+            <li class="nav-item">
+              <a class="nav-link" href="./employer-signup.html">Employer ?</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
                 Browse Jobs
               </a>
-              <ul class="dropdown-menu  ">
+              <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
                 <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
                 <li>
@@ -41,167 +71,160 @@
                 <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
               </ul>
             </li>
-            <li class="nav-item ">
-              <a class="text-white" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
+            <li class="nav-item">
+              <a class="nav-link" href="./jop-posting.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pricing.html">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact Us</a>
+            </li>
+            <div class="d-flex flex-column w-100  position-absolute bottom-0 start-0 ">
+              <a href="./login.html" class="offcanvas-login mt-3 w-100">Login</a>
+              <a href="./signup.html" class="offcanvas-signup mt-3 w-100">Get Started</a>
+            </div>
           </ul>
-    
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h1 class="offcanvas-title " id="offcanvasNavbarLabel "><span>S</span>HAGHR</h1>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body ">
-              <ul class="navbar-nav  flex-grow-1 position-relative h-100 ">
-                <li class="nav-item">
-                  <a class="nav-link" href="./employer-signup.html">Employer ?</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Browse Jobs
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
-                    <li><a class="dropdown-item" href="./job_list.html">jobs</a></li>
-                    <li>
-                      <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="./job_list.html">Browse All Jobs</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./employer-signup.html"><i class="fa-solid fa-briefcase me-2"></i>Post a Job</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pricing.html">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./about.html">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">Contact Us</a>
-                </li>
-                <div class="d-flex flex-column w-100  position-absolute bottom-0 start-0 ">
-                  <a href="./login.html" class="offcanvas-login mt-3 w-100">Login</a>
-                  <a href="./signup.html" class="offcanvas-signup mt-3 w-100">Get Started</a>
-                </div>
-              </ul>
-            </div>
-          </div>
-          <a href="./login.html" class="login-button">Login</a>
-          <a href="./signup.html" class="signup-button  expand-lg">Join Now </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <i class="fa-solid fa-bars toggler-icon "></i>
-          </button>
         </div>
-      </nav>
+      </div>
+      <a href="./login.html" class="login-button">Login</a>
+      <a href="./signup.html" class="signup-button  expand-lg">Join Now </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars toggler-icon "></i>
+      </button>
     </div>
-    <!-- End Header -->
-    <!-- start signup -->
-    <div class="registration-section">
-        <div class="container">
-            <div class="image">
-                <div class="content">
-                    <h1>Hello, Friend!</h1>
-                    <p>Enter your personal details and start journey with us</p>
-                    <img src="imgs/Sign up-cuate.svg" alt="" />
-                </div>
-            </div>
-            <div class="form">
-                <div class="content">
-                    <h2>Sign up to your account</h2>
-                    <form action="">
-                        <input class="input" type="text" placeholder="First Name" name="first" />
-                        <input class="input" type="text" placeholder="Last Name" name="last" />
-                        <input class="input" type="email" placeholder="Your Email" name="email" />
-                        <input class="input" type="password" placeholder="Your Password" name="password" />
-                        <input type="submit" value="Sign up" />
-                        <div class="social-container">
-                            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
-                            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <p>Already On SHAGHR?<a class="join-now" href="login.html">Sign in</a></p>
-                    </form>
-                </div>
-            </div>
+  </nav>
+  </div>
+  <!-- End Header -->
+  <!-- start signup -->
+  <div class="registration-section">
+    <div class="container">
+      <div class="image">
+        <div class="content">
+          <h1>Hello, Friend!</h1>
+          <p>Enter your personal details and start journey with us</p>
+          <img src="imgs/Sign up-cuate.svg" alt="" />
         </div>
-    </div>
-    <!-- end signup -->
-    <!-- Start Footer -->
-    <div class="footer">
-        <div class="container">
-            <div class="box">
-                <h3>SHAGHR</h3>
-                <ul class="social">
-                    <li>
-                        <a href="#" class="facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="youtube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </li>
-                </ul>
-                <p class="text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste
-                    aspernatur
-                </p>
-            </div>
-            <div class="box">
-                <ul class="links">
-                    <li><a href="./about.html">About Us</a></li>
-                    <li><a href="./job_list.html">Jobs</a></li>
-                    <li><a href="./pricing.html">Pricing</a></li>
-                    <li><a href="./contact.html">Contact Us</a></li>
-                    <li><a href="#feadback">Feadback</a></li>
-                </ul>
-            </div>
-            <div class="box">
-                <div class="line">
-                    <i class="fas fa-map-marker-alt fa-fw"></i>
-                    <div class="info">Egypt , Giza , Fisal</div>
-                </div>
-                <div class="line">
-                    <i class="far fa-clock fa-fw"></i>
-                    <div class="info">Business Hours: From 10:00 To 18:00</div>
-                </div>
-                <div class="line">
-                    <i class="fas fa-phone-volume fa-fw"></i>
-                    <div class="info">
-                        <span>+201100760404</span>
-                        <span>+201550929581</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+      </div>
+      <div class="form">
+        <div class="content">
+          <h2>Sign up to your account</h2>
+          <form id="newform" action="#" class="needs-validation" novalidate>
 
-        <p class="copyright">&copy; 2024 SHAGHR All Right Reserved</p>
+            <div class="form-group position-relative">
+              <input class="input form-control" type="text" placeholder="First Name" name="first" required />
+              <div class="invalid-tooltip">Please check your first name</div>
+            </div>
+
+            <div class="form-group position-relative">
+              <input class="input form-control" type="text" placeholder="Last Name" name="last" required />
+              <div class="invalid-tooltip">Please check your last name</div>
+            </div>
+
+            <div class="form-group position-relative ">
+              <input class="input form-control" type="email" placeholder="Your Email" name="email" required />
+              <div class="invalid-tooltip">Please check your email</div>
+            </div>
+
+            <div class="password-container form-group position-relative">
+              <input class="input form-control" type="password" placeholder="Your Password" name="password"
+                id="password" required />
+              <div class="password-toggle" onclick="togglePassword()">
+                <i id="eye-icon" class="fa fa-eye" aria-hidden="true"></i>
+              </div>
+              <div class="invalid-tooltip">Please check your password</div>
+            </div>
+
+            <input type="submit" value="Sign up" />
+
+            <div class="social-container">
+              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>Already On SHAGHR?<a class="join-now" href="login.html">Sign in</a></p>
+          </form>
+        </div>
+      </div>
     </div>
-    <!-- End Footer -->
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="js/all.min.js"></script> -->
-    <script src="js/main.js"></script>
-    <script>
-        AOS.init({
-            easing: 'ease-in-out-sine'
-        });
-    </script>
-    <script>$(document).ready(function () {
-            $(".owl-carousel").owlCarousel();
-        });</script>
+  </div>
+  <!-- end signup -->
+  <!-- Start Footer -->
+  <div class="footer">
+    <div class="container">
+      <div class="box">
+        <h3>SHAGHR</h3>
+        <ul class="social">
+          <li>
+            <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="youtube">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+        </ul>
+        <p class="text">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus nulla rem, dignissimos iste
+          aspernatur
+        </p>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./job_list.html">Jobs</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="#feadback">Feadback</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="line">
+          <i class="fas fa-map-marker-alt fa-fw"></i>
+          <div class="info">Egypt , Giza , Fisal</div>
+        </div>
+        <div class="line">
+          <i class="far fa-clock fa-fw"></i>
+          <div class="info">Business Hours: From 10:00 To 18:00</div>
+        </div>
+        <div class="line">
+          <i class="fas fa-phone-volume fa-fw"></i>
+          <div class="info">
+            <span>+201100760404</span>
+            <span>+201550929581</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="copyright">&copy; 2024 SHAGHR All Right Reserved</p>
+  </div>
+  <!-- End Footer -->
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- <script src="js/all.min.js"></script> -->
+  <script src="js/main.js"></script>
+  <script>
+    AOS.init({
+      easing: 'ease-in-out-sine'
+    });
+  </script>
+  <script>$(document).ready(function () {
+      $(".owl-carousel").owlCarousel();
+    });</script>
 </body>
 
 </html>
