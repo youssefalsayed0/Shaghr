@@ -1541,15 +1541,20 @@ ul {
 /* end slang */
 
 /* start jobs */
+
 .jobs {
   background-color: var(--section-background);
   padding-top: var(--main-padding-top);
   padding-bottom: var(--main-padding-bottom);
-  height: 100vh;
+  height: 100%;
 }
 
 .jobs .container {
   max-width: 1170px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
 }
 
 .job-list {
